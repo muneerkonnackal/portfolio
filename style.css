@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+.navbar{
+    display: flex;  /*to display side by side*/
+    justify-content: space-between; /*onnoru side lum matteth veroru sidilum varan*/
+    margin-left: 100px;
+    align-items: center;
+    width: 85%;
+
+
+}
+.logo{
+    width: 130px;
+}
+.linkitem{
+    display: inline; /* show the vertical list to horizontal*/
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/* pseudo class */
+.links:hover{
+    color: red;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+
+}
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#last_name{
+    color: #ffa500;
+}
+.download{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%; /* hover work avanamenkil avde already kurach space venam nkile hover scene avukayollu*/
+    bottom: 0; /*""*/
+    transform: translateX(-50%);/*scroll default ayath kalayan aanuee command  x direction l aanu scroll vannath athkond transform x koduthu*/
+    transition: bottom 1s, left 2s; /* movement slow akkan aanu ee command use cheyyunnath*/
+}
+
+.images:hover #shape{
+bottom: 70px;
+}
+
+.images:hover #girl{
+    left: 40%;
+}
+
+#about{
+    margin: 16% 8% 0 8%;
+}
+.heading{
+text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    /*2-column, 1fr- 1 frames(255px)*/
+    gap: 2rem; /* 1rem=16px*/
+    margin-top: 2rem;
+   
+  
+}
+
+.about-content img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-deails{
+    font-size: 18px;
+    font-weight: 400;
+    text-align:justify;
+    }
+
+.information{
+    margin-top: 2rem;
+}
+
+.info-box{
+margin-bottom: 1rem;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+
+
+
+#skills{
+    margin: 8% 8% 0% 8%;
+   
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 85%;
+    padding-left: 8rem;
+    border-radius: 1rem;
+
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.html-bar{
+    width: 95%;
+    background-color: #ffa500;
+}
+.css-bar{
+    width: 85%;
+    background-color: #ffa500;
+}
+.js-bar{
+    width: 89%;
+    background-color: #ffa500;
+}
+.react-bar{
+    width: 85%;
+    background-color: #ffa500;
+}
+
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid #ffa500; */
+    display: flex; /*exact oru divne cntre il varan ee 3 properties use cheyyam  display flex, justifycontent ,align item*/
+    justify-content: center; /* horizontally centre il varan*/
+    align-items: center; /*vertically centre il varan*/
+    margin: 0px 10px;
+}
+.icon i{ /* ingane allathe fa-2x 3x xs anganeyum mattam ,colour okke change akkanamenkil ingane cheyyam */
+    font-size: 30px;
+    color: black;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow , red);
+} /* to bottom right means the direction of gradient yellow mukalinnu thazhe varumpol red ith background image akkiyanu kodukkunnath */
+.icon:hover i{ /* icon hover cheyyumpol i de color maranam , karanam i tag il aanu icons ullath*/
+    color: #fff;
+    animation: shake 0.75s; /* give a name for animation, seconds*/
+}
+@keyframes shake{
+10%{
+    transform: rotate(15deg);
+}
+20%{
+    transform: rotate(-15deg);
+}
+30%{
+    transform: rotate(15deg);
+}
+40%{
+    transform: rotate(-15deg);
+}
+}
+
+footer{
+    margin: 3rem 0px;
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right, yellow , red);
+}
+.up-arrow:hover i{
+    color: #fff;
+
+}
